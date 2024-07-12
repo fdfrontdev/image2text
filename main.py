@@ -65,6 +65,7 @@ def check_pre_requisites_tesseract():
     :param : NA
     :return: boolean
     """
+    pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
     check_command = get_command()
     logging.debug("Running `{}` to check if tesseract is installed or not.".format(check_command))
 
